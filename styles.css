@@ -1,0 +1,158 @@
+/* Allgemein */
+body {
+    background: linear-gradient(135deg, #1f1f1f, #2b2b2b);
+    color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #2B303A;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+h1 {
+    color: #FFD369;
+    margin-bottom: 15px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #f0f0f0;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover {
+    color: #FFD369;
+    border-bottom: 2px solid #FFD369;
+}
+
+nav a.active {
+    color: #FFD369;
+    border-bottom: 2px solid #FFD369;
+}
+
+/* Bilder */
+.container img {
+    max-width: 300px;   
+    height: auto;       
+    display: block;
+    margin: 0 auto;     
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+}
+
+/* Audio-Player */
+.container audio {
+    display: block;
+    margin: 15px auto 0 auto; 
+    width: 250px;             
+    border-radius: 10px;
+}
+
+/* Container (Cards) */
+.container {
+    display: flex;
+    flex-direction: row;   
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #2B303A;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+/* Textboxen */
+h3 {
+    background-color: #393E46;
+    border-left: 5px solid #FFD369;
+    border-radius: 10px;
+    padding: 15px;
+    overflow-wrap: break-word;
+}
+
+/* Willkommen & Erklärung */
+.Willkommen, .Erklärung, .Infobereich {
+    background-color: #393E46;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    text-align: center;
+    border: 1px solid #FFD369;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #bbb;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 2px solid #FFD369;
+}
+
+footer a {
+    color: #FFD369;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsives Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;  
+        text-align: center;
+    }
+
+    .container img {
+        max-width: 80%;  
+    }
+
+    .container audio {
+        width: 80%;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 10px;
+    }
+}
+
+.Schlagzeug {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    margin: 30px 0;          
+}
+
+.Schlagzeug img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+
